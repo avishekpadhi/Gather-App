@@ -98,6 +98,10 @@ GEM
       warden (~> 1.2.3)
     erubi (1.12.0)
     ffi (1.15.5-x64-mingw-ucrt)
+    font-awesome-rails (4.7.0.8)
+      railties (>= 3.2, < 8.0)
+    font-awesome-sass (6.3.0)
+      sassc (~> 2.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
     i18n (1.12.0)
@@ -186,6 +190,8 @@ GEM
     ruby-vips (2.1.4)
       ffi (~> 1.12)
     rubyzip (2.3.2)
+    sassc (2.4.0)
+      ffi (~> 1.9)
     selenium-webdriver (4.8.1)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
@@ -240,6 +246,8 @@ DEPENDENCIES
   cssbundling-rails
   debug
   devise
+  font-awesome-rails
+  font-awesome-sass (~> 6.3.0)
   image_processing (~> 1.2)
   importmap-rails
   jbuilder

@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users,controllers: {registrations: 'users/registrations'}
   as :user do
 
     get "signin" => 'devise/sessions#new'
@@ -13,8 +13,6 @@ Rails.application.routes.draw do
 
   root 'pages#home'
 
-  get 'about' => "pages#about"
-  get 'contact' => "pages#contact"
   resource :pages
   
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
